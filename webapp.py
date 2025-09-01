@@ -243,7 +243,7 @@ def load_model():
 
 # Streamlit UI
 st.title("Shakespeare Text Generator")
-st.markdown("Enter some text and let it continue in Shakespeare's style!")
+st.title("Enter some text and let it continue in Shakespeare's style!")
 
 # Load model
 model, encode, decode, device = load_model()
@@ -290,4 +290,5 @@ with st.expander("How to use"):
        - **Temperature**: Higher = more creative, Lower = less creative
        - **Top-k**: Limits vocabulary to top k most likely tokens
     3. Click 'Generate' to continue your text in Shakespeare's style!
+
     """)
